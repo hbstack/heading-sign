@@ -21,6 +21,7 @@ import * as params from '@params';
                 const anchor = document.createElement('a')
                 anchor.className = 'anchor ms-1'
                 anchor.href = `#${id}`
+                anchor.innerText = '§'
                 heading.appendChild(anchor)
             })
         }

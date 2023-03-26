@@ -6,13 +6,14 @@ h3,
 h4,
 h5,
 h6 {
+    .anchor {
+        display: none;
+        text-decoration: none;
+    }
+
     &:hover {
         .anchor {
-            text-decoration: none;
-
-            &::before {
-                content: "§";
-            }
+            display: inline-block;
         }
     }
 }
