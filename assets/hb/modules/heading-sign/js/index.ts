@@ -7,6 +7,8 @@ import * as params from '@params';
             return
         }
 
+        const symbol = params?.heading_sign?.symbol ?? '§'
+
         for (const selector in containers) {
             const container = document.querySelector(selector)
             if (!container) {
@@ -21,7 +23,7 @@ import * as params from '@params';
                 const anchor = document.createElement('a')
                 anchor.className = 'anchor ms-1'
                 anchor.href = `#${id}`
-                anchor.innerText = '§'
+                anchor.innerText = symbol
                 heading.appendChild(anchor)
             })
         }
